@@ -1,0 +1,17 @@
+﻿<div id="Index" class="row">
+    <div class="col-md-5 text-center col-centered">
+        <img src="~/Content/Images/maintitle.png" alt="FaltanBoletas" />
+        <h1>FaltanBoletas.com</h1>
+        <form method="post">
+            <div class="form-group">
+                <input type="number" id="Phone" name="Phone" class="form-control col-centered" />
+            </div>
+            @if (ViewBag.Results != string.Empty)
+            {
+                <h4>@ViewBag.Results</h4>
+                <br />
+            }
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+</div>
